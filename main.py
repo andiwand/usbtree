@@ -24,21 +24,8 @@ TEST_INPUT = """/:  Bus 04.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/6p, 50
 /:  Bus 01.Port 1: Dev 1, Class=root_hub, Driver=ehci-pci/2p, 480M
     |__ Port 1: Dev 2, If 0, Class=Hub, Driver=hub/6p, 480M"""
 
-def parse_tree(text):
-    tree = {}
-    
-    for line in text.splitlines():
-        if (line.startswith("/:")):
-            pass
-        else:
-            pass
-    
-    return tree
-
 def main():
-    print usbpath(1, 0, (), 1, 0)
-    print usbidentifier("04b3", "3108")
-    parse_tree(TEST_INPUT)
+    pass
 
 if __name__ == "__main__":
     main()
